@@ -7,12 +7,15 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+final class AudioOutputSelectorViewController: NSViewController {
 
+    override func loadView() {
+        self.view = NSView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print("Hello")
     }
 
     override var representedObject: Any? {

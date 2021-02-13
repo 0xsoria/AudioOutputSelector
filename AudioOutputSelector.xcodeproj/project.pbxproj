@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		156FD21E25D865AE00B4FE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD21D25D865AE00B4FE1E /* AppDelegate.swift */; };
-		156FD22025D865AE00B4FE1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD21F25D865AE00B4FE1E /* ViewController.swift */; };
+		156FD22025D865AE00B4FE1E /* AudioOutputSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD21F25D865AE00B4FE1E /* AudioOutputSelectorViewController.swift */; };
 		156FD22225D865AF00B4FE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156FD22125D865AF00B4FE1E /* Assets.xcassets */; };
-		156FD22525D865AF00B4FE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156FD22325D865AF00B4FE1E /* Main.storyboard */; };
 		156FD23125D865B000B4FE1E /* AudioOutputSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD23025D865B000B4FE1E /* AudioOutputSelectorTests.swift */; };
 		156FD23C25D865B000B4FE1E /* AudioOutputSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD23B25D865B000B4FE1E /* AudioOutputSelectorUITests.swift */; };
+		156FD25125D8746D00B4FE1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD25025D8746D00B4FE1E /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,8 @@
 /* Begin PBXFileReference section */
 		156FD21A25D865AE00B4FE1E /* AudioOutputSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioOutputSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156FD21D25D865AE00B4FE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		156FD21F25D865AE00B4FE1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		156FD21F25D865AE00B4FE1E /* AudioOutputSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOutputSelectorViewController.swift; sourceTree = "<group>"; };
 		156FD22125D865AF00B4FE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		156FD22425D865AF00B4FE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		156FD22625D865AF00B4FE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156FD22725D865AF00B4FE1E /* AudioOutputSelector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioOutputSelector.entitlements; sourceTree = "<group>"; };
 		156FD22C25D865AF00B4FE1E /* AudioOutputSelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioOutputSelectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +45,7 @@
 		156FD23725D865B000B4FE1E /* AudioOutputSelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioOutputSelectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		156FD23B25D865B000B4FE1E /* AudioOutputSelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOutputSelectorUITests.swift; sourceTree = "<group>"; };
 		156FD23D25D865B000B4FE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156FD25025D8746D00B4FE1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				156FD21D25D865AE00B4FE1E /* AppDelegate.swift */,
-				156FD21F25D865AE00B4FE1E /* ViewController.swift */,
+				156FD21F25D865AE00B4FE1E /* AudioOutputSelectorViewController.swift */,
 				156FD22125D865AF00B4FE1E /* Assets.xcassets */,
-				156FD22325D865AF00B4FE1E /* Main.storyboard */,
 				156FD22625D865AF00B4FE1E /* Info.plist */,
 				156FD22725D865AF00B4FE1E /* AudioOutputSelector.entitlements */,
+				156FD25025D8746D00B4FE1E /* main.swift */,
 			);
 			path = AudioOutputSelector;
 			sourceTree = "<group>";
@@ -228,7 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				156FD22225D865AF00B4FE1E /* Assets.xcassets in Resources */,
-				156FD22525D865AF00B4FE1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				156FD22025D865AE00B4FE1E /* ViewController.swift in Sources */,
+				156FD22025D865AE00B4FE1E /* AudioOutputSelectorViewController.swift in Sources */,
 				156FD21E25D865AE00B4FE1E /* AppDelegate.swift in Sources */,
+				156FD25125D8746D00B4FE1E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,17 +288,6 @@
 			targetProxy = 156FD23825D865B000B4FE1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		156FD22325D865AF00B4FE1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				156FD22425D865AF00B4FE1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		156FD23E25D865B000B4FE1E /* Debug */ = {

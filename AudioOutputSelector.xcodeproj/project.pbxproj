@@ -13,6 +13,7 @@
 		156FD23125D865B000B4FE1E /* AudioOutputSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD23025D865B000B4FE1E /* AudioOutputSelectorTests.swift */; };
 		156FD23C25D865B000B4FE1E /* AudioOutputSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD23B25D865B000B4FE1E /* AudioOutputSelectorUITests.swift */; };
 		156FD25125D8746D00B4FE1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD25025D8746D00B4FE1E /* main.swift */; };
+		156FD25925D8808200B4FE1E /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD25825D8808200B4FE1E /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		156FD23B25D865B000B4FE1E /* AudioOutputSelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOutputSelectorUITests.swift; sourceTree = "<group>"; };
 		156FD23D25D865B000B4FE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156FD25025D8746D00B4FE1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		156FD25825D8808200B4FE1E /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				156FD22625D865AF00B4FE1E /* Info.plist */,
 				156FD22725D865AF00B4FE1E /* AudioOutputSelector.entitlements */,
 				156FD25025D8746D00B4FE1E /* main.swift */,
+				156FD25825D8808200B4FE1E /* EventMonitor.swift */,
 			);
 			path = AudioOutputSelector;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				156FD22025D865AE00B4FE1E /* AudioOutputSelectorViewController.swift in Sources */,
 				156FD21E25D865AE00B4FE1E /* AppDelegate.swift in Sources */,
 				156FD25125D8746D00B4FE1E /* main.swift in Sources */,
+				156FD25925D8808200B4FE1E /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

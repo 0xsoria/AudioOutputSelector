@@ -8,10 +8,10 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    private var window: NSWindow?
+
     private var statusItem: NSStatusItem?
     private let popover = NSPopover()
+    var eventMonitor: EventMonitor?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
@@ -20,6 +20,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = self.statusItem?.button {
             button.action = #selector(AppDelegate.togglePopover(_:))
         }
+        
+        self.eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDragged], handler: { [weak self ]event in
+            if let strongSelf = self, strongSelf.popover.isShown {
+                strongSelf.closePopover(event)
+            }
+        })
         
         let viewController = AudioOutputSelectorViewController()
         viewController.view.frame = CGRect(x: 0, y: 0, width: 400, height: 200)
@@ -41,10 +47,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private func showPopover(_ sender: Any?) {
         if let button = self.statusItem?.button {
             self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            self.eventMonitor?.start()
         }
     }
     
     private func closePopover(_ sender: Any?) {
         self.popover.performClose(sender)
+        self.eventMonitor?.stop()
     }
 }

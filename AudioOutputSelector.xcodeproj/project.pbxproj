@@ -14,6 +14,7 @@
 		156FD23C25D865B000B4FE1E /* AudioOutputSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD23B25D865B000B4FE1E /* AudioOutputSelectorUITests.swift */; };
 		156FD25125D8746D00B4FE1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD25025D8746D00B4FE1E /* main.swift */; };
 		156FD25925D8808200B4FE1E /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FD25825D8808200B4FE1E /* EventMonitor.swift */; };
+		15B89257261E4AF500C70E6F /* NSSound+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B89256261E4AF500C70E6F /* NSSound+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		156FD23D25D865B000B4FE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156FD25025D8746D00B4FE1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		156FD25825D8808200B4FE1E /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		15B89256261E4AF500C70E6F /* NSSound+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSSound+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				156FD22725D865AF00B4FE1E /* AudioOutputSelector.entitlements */,
 				156FD25025D8746D00B4FE1E /* main.swift */,
 				156FD25825D8808200B4FE1E /* EventMonitor.swift */,
+				15B89256261E4AF500C70E6F /* NSSound+Extensions.swift */,
 			);
 			path = AudioOutputSelector;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				156FD22025D865AE00B4FE1E /* AudioOutputSelectorViewController.swift in Sources */,
 				156FD21E25D865AE00B4FE1E /* AppDelegate.swift in Sources */,
 				156FD25125D8746D00B4FE1E /* main.swift in Sources */,
+				15B89257261E4AF500C70E6F /* NSSound+Extensions.swift in Sources */,
 				156FD25925D8808200B4FE1E /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

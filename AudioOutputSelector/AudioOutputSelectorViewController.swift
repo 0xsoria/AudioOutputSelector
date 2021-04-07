@@ -15,7 +15,9 @@ final class AudioOutputSelectorViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello")
+        let sound = NSSound()
+        print(NSSound.obtainDefaultOutputDevice())
+        print(NSSound.systemVolume)
     }
 
     override var representedObject: Any? {
@@ -23,7 +25,4 @@ final class AudioOutputSelectorViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
-
